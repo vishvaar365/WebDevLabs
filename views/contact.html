@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vishvaa Ravishankar">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="Vishvaa Ravishankar professional website">
+    <title>Contact - Vishvaa Ravishankar</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script.js" defer></script>
+</head>
+<body onload="addYear()">
+    <header>
+        <h1 id="webname">Vishvaa Ravishankar</h1>
+        <nav>
+            <a href="../index.html">About</a>
+            <a href="cv.html">Resume</a>
+            <a href="fun.html">Play</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <div class="mainLayout">
+        <div class="item1">
+            <h2>Find Me</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.194201339424!2d-79.94770258467995!3d40.44346527936396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f2276f1b4e6f%3A0xaab9c1cfccd66761!2sCarnegie%20Mellon%20University!5e0!3m2!1sen!2sus!4v1234567890" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <div class="item2">
+            <h2>Contact Me</h2>
+            <table>
+                <tr>
+                    <th>Contact Method</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td>vishvaar@andrew.cmu.edu</td>
+                </tr>
+                <tr>
+                    <td>Phone:</td>
+                    <td>248-930-7242</td>
+                </tr>
+                <tr>
+                    <td>Social Media:</td>
+                    <td><a href="https://www.linkedin.com/in/vishvaa-ravishankar-a53b63334" target="_blank">LinkedIn</a></td>
+                </tr>
+            </table>
+            <form id="contactForm" onsubmit="return validateForm()">
+                <label for="name">YOUR NAME:</label>
+                <input type="text" id="name" name="name" required>
+                <p id="nameError" class="error"></p>
+                
+                <label for="email">YOUR EMAIL:</label>
+                <input type="email" id="email" name="email" required>
+                <p id="emailError" class="error"></p>
+                
+                <label for="comment">YOUR COMMENT:</label>
+                <textarea id="comment" name="comment" required></textarea>
+                <p id="commentError" class="error"></p>
+                
+                <button type="submit" id="send-button">SEND</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p id="copyYear">&copy; Designed and Coded by Vishvaa Ravishankar</p>
+    </footer>
+</body>
+</html>

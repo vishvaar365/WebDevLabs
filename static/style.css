@@ -1,0 +1,161 @@
+/* Global Styles */
+* {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    padding: 5px;
+    margin: 5px;
+}
+
+/* Header Styling */
+#webname {
+    background-color: #92ad70;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* Navigation Styling */
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: green;
+    margin-right: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Main Content Styling */
+.main {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.main h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Flexbox Layout */
+.mainLayout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.item1, .item2, .item3, .item4 {
+    flex: 1;
+    min-width: 300px;
+    margin: 10px;
+}
+
+/* Image Styling */
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.funIMG {
+    border-radius: 100%;
+}
+
+/* Table Styling */
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 8px;
+    margin: 0 auto;
+    width: 80%;
+    text-align: left;
+}
+
+th {
+    padding: 12px;
+    background-color: #333;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Form Styling */
+form * {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+}
+
+#send-button {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 9999px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* Styling for 'Click to see...' Button */
+#showListBtn {
+    background-color: #92ad70;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Styling for Hidden List */
+#funList {
+    list-style-type: square;
+    margin-top: 15px;
+    display: none; /* Ensures the list is hidden by default */
+}
+
+/* Button and Bio Section Styling */
+#toggleBioBtn {
+    background-color: #92ad70;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Error Styling for Form Validation */
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+/* Styling for Advice Section */
+.container {
+    border-radius: 10%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: inline-block;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    margin-top: 20px;
+}

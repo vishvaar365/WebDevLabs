@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vishvaa Ravishankar">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="Vishvaa Ravishankar professional website">
+    <title>Fun - Vishvaa Ravishankar</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script.js" defer></script>
+    <style>
+        /* Adjustments for all content to fit without scrolling */
+        .mainLayout {
+            display: grid;
+            grid-template-rows: auto auto;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .item1 {
+            grid-row: 1;
+            grid-column: 1;
+        }
+        .item2 {
+            grid-row: 1;
+            grid-column: 2;
+        }
+        .item3 {
+            grid-row: 2;
+            grid-column: 1;
+        }
+        .item4 {
+            grid-row: 2;
+            grid-column: 2;
+        }
+        .funIMG {
+            max-width: 80%;
+            height: auto;
+            border-radius: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+        iframe {
+            width: 100%;
+            height: 200px;
+            display: block;
+        }
+        .container {
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body onload="addYear()">
+    <header>
+        <h1 id="webname">Vishvaa Ravishankar</h1>
+        <nav>
+            <a href="../index.html">About</a>
+            <a href="cv.html">Resume</a>
+            <a href="fun.html">Play</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <div class="mainLayout">
+        <!-- Fun Activities Section -->
+        <div class="item1">
+            <h2>Things I love to do for fun</h2>
+            <ul>
+                <li>Playing soccer with friends</li>
+                <li>Watching science fiction movies</li>
+                <li>Exploring new hiking trails</li>
+                <li>Experimenting with new coding projects</li>
+                <li>Attending local music concerts</li>
+            </ul>
+        </div>
+
+        <!-- Fun Image Section -->
+        <div class="item2">
+            <img 
+                src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*jlbq8seSTP0J4I-hMRTvtg.jpeg" 
+                alt="Fun Hiking Image" 
+                class="funIMG">
+        </div>
+
+        <!-- Embedded YouTube Video Section -->
+        <div class="item3">
+            <iframe 
+                src="https://www.youtube.com/embed/C05KugPhur8" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Random Advice Section -->
+        <div class="item4">
+            <div class="container">
+                <h2>Need Some Advice?</h2>
+                <p id="adviceText">Click the button to get a random piece of advice!</p>
+                <button onclick="getAdvice()">Get Advice</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p id="copyYear">&copy; Designed and Coded by Vishvaa Ravishankar</p>
+    </footer>
+</body>
+</html>
